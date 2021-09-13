@@ -29,6 +29,14 @@ export class UserSession {
 export class UserCreds {
   username: string = '';
   password: string = '';
+  static schema = {
+    type: 'object',
+    properties: {
+      username: {type: 'string'},
+      password: {type: 'string'}
+    },
+    required: ['username', 'password']
+  }
 }
 
 export function createClient () {
