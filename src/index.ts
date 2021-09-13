@@ -15,7 +15,7 @@ export interface UserSessionsApi {
 
 export class UserSession {
   isActive: boolean = false;
-  username: string = '';
+  username?: string = '';
   static schema = {
     type: 'object',
     properties: {
